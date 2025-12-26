@@ -1,107 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - ShazamMedia</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #f9f9f9;
-    }
-    .container {
-      background: white;
-      padding: 40px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    h1 {
-      border-bottom: 2px solid #eee;
-      padding-bottom: 10px;
-      margin-bottom: 30px;
-    }
-    h2 {
-      margin-top: 30px;
-      margin-bottom: 15px;
-      color: #2c3e50;
-    }
-    p {
-      margin-bottom: 15px;
-    }
-    ul {
-      margin-bottom: 15px;
-      padding-left: 20px;
-    }
-    li {
-      margin-bottom: 5px;
-    }
-    .contact {
-      background: #f0f4f8;
-      padding: 15px;
-      border-radius: 4px;
-      margin-top: 30px;
-    }
-    footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #666;
-      text-align: center;
-    }
-  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - ShazamMedia</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .contact {
+            background: #f0f4f8;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 30px;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #666;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-  <div class="container">
-    <h1>Privacy Policy</h1>
-    <p>Last updated: December 26, 2025</p>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p>Last updated: December 26, 2025</p>
 
-    <p><strong>ShazamMedia</strong> ("we," "us," or "our") respects your privacy and is committed to protecting your personal data. This Privacy Policy explains how we handle information when you use our mobile application.</p>
+        <p><strong>ShazamMedia</strong> ("we," "us," or "our") respects your privacy and is committed to protecting your
+            personal data. This Privacy Policy explains how we handle information when you use our mobile application.
+        </p>
 
-    <h2>1. Information We Do Not Collect</h2>
-    <p>We believe in privacy by design. To that end:</p>
-    <ul>
-      <li><strong>No Personal Information:</strong> We do not collect, store, or share your name, email address, phone number, location, or any other personally identifiable information.</li>
-      <li><strong>No User Accounts:</strong> You do not need to create an account to use the App.</li>
-      <li><strong>No Tracking:</strong> We do not use third-party analytics, tracking cookies, or advertising identifiers to track your activity across other apps or websites.</li>
-    </ul>
+        <h2>1. Information We Collect</h2>
+        <p>We believe in privacy by design, but we do collect some anonymous usage data to help us improve the app.</p>
+        <ul>
+            <li><strong>Usage Analytics (PostHog):</strong> We use <strong>PostHog</strong>, a third-party analytics
+                service, to collect anonymous data about how you interact with the app (e.g., successful searches, error
+                rates). This helps us understand usage patterns, identify bugs, and improve performance.</li>
+            <li><strong>No Personal Information:</strong> We do not collect, store, or share your name, email address,
+                phone number, location, or any specific personally identifiable information.</li>
+            <li><strong>No User Accounts:</strong> You do not need to create an account to use the App.</li>
+        </ul>
 
-    <h2>2. Data Usage and Processing</h2>
-    <p>The primary function of ShazamMedia is to identify media (such as anime) from images you provide. Here is how your data is handled during this process:</p>
-    <ul>
-      <li><strong>Image Processing:</strong> When you submit an image or video frame for identification, that specific image data is transmitted securely to third-party identification services (such as public anime identification APIs) solely for the purpose of generating search results.</li>
-      <li><strong>Ephemeral Processing:</strong> These images are processed transiently to provide the service and are not used by us to identify or track individual users.</li>
-    </ul>
+        <h2>2. Data Usage and Processing</h2>
+        <p>The primary function of ShazamMedia is to identify media (such as anime) from images you provide. Here is how
+            your data is handled:</p>
+        <ul>
+            <li><strong>Image Processing (Trace.moe):</strong> When you submit an image or video frame for
+                identification, the image data is transmitted securely to <strong>Trace.moe</strong>, a third-party
+                anime search engine, solely for the purpose of generating search results. Trace.moe processes this data
+                transiently to find a match.</li>
+            <li><strong>Metadata (AniList):</strong> Once a match is found, the App queries <strong>AniList</strong> to
+                retrieve details such as the anime title, description, episode count, and genres.</li>
+            <li><strong>Ephemeral Processing:</strong> Search images are not permanently stored on our servers. They are
+                used only for the immediate search request.</li>
+        </ul>
 
-    <h2>3. Data Storage</h2>
-    <ul>
-      <li><strong>Local Storage:</strong> All of your search history, results, watchlists, and settings are stored locally on your device.</li>
-      <li><strong>No Cloud Sync:</strong> We do not transmit or backup your personal search history to any servers owned or controlled by ShazamMedia. If you delete the App, this data is removed from your device.</li>
-    </ul>
+        <h2>3. Data Storage</h2>
+        <ul>
+            <li><strong>Local Storage:</strong> All of your search history, results, watchlists, and settings are stored
+                locally on your device.</li>
+            <li><strong>No Cloud Sync:</strong> We do not transmit or backup your personal search history to any servers
+                owned or controlled by ShazamMedia. If you delete the App, this data is removed from your device.</li>
+        </ul>
 
-    <h2>4. Third-Party Services</h2>
-    <p>The App may interact with third-party APIs to provide identification results. These third parties act as independent data controllers or processors. While we do not control their policies, we select services that align with our functionality needs. We do not share your personal identity with these services.</p>
+        <h2>4. Third-Party Services</h2>
+        <p>The App relies on third-party APIs to provide its core functionality. These third parties act as independent
+            data controllers or processors:</p>
+        <ul>
+            <li><strong>Trace.moe:</strong> For image recognition.</li>
+            <li><strong>AniList:</strong> For anime metadata.</li>
+            <li><strong>PostHog:</strong> For anonymous analytics.</li>
+        </ul>
+        <p>While we confirm these services are reputable, we do not control their policies. We do not share your
+            personal identity with these services.</p>
 
-    <h2>5. Kids’ Privacy</h2>
-    <p>Our App is not intended for use by anyone under the age of 13. We do not knowingly collect personal information from children. If you are a parent or guardian and believe that your child has provided us with personal information, please contact us so that we can take necessary actions.</p>
+        <h2>5. Kids’ Privacy</h2>
+        <p>Our App is not intended for use by anyone under the age of 13. We do not knowingly collect personal
+            information from children. If you are a parent or guardian and believe that your child has provided us with
+            personal information, please contact us so that we can take necessary actions.</p>
 
-    <h2>6. Changes to This Privacy Policy</h2>
-    <p>We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+        <h2>6. Changes to This Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically
+            for any changes. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
 
-    <h2>7. Contact Us</h2>
-    <div class="contact">
-      <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at:</p>
-      <p><strong>Email:</strong> <a href="mailto:fawazdev@gmail.com">fawazdev@gmail.com</a></p>
+        <h2>7. Contact Us</h2>
+        <div class="contact">
+            <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at:</p>
+            <p><strong>Email:</strong> <a href="mailto:fawazdev@gmail.com">fawazdev@gmail.com</a></p>
+        </div>
     </div>
-  </div>
 
-  <footer>
-    <p>&copy; 2025 ShazamMedia. All rights reserved.</p>
-  </footer>
+    <footer>
+        <p>&copy; 2025 ShazamMedia. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>
-
-
